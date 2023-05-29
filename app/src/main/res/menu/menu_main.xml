@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+This is the file used to populate the custom toolbar as the action bar when created.
+Basically only holds the notification bell item and allows for the title to be reassigned
+but it does have to exist lol.
+
+Created by: Tristan Vizvary
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"/>

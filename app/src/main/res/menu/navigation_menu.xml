@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+This is the navigation menu view file that is used to populate the side drawer with items
+
+Created by: Tristan Vizvary
+
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/nav_performance"
+        android:title="@string/performance_amp_pay"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_punch"
+        android:title="@string/punch_in_out"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/nav_personal_info"
+        android:title="@string/personal_info"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/nav_sign_out"
+        android:title="@string/sign_out"
+        app:showAsAction="ifRoom"/>
+
+</menu>

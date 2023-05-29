@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="605dp">
+
+        <!--Using cardviews to create the circle border for the profile picture-->
+
+        <TextView
+            android:id="@+id/profileUserRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="165dp"
+            android:text="@string/employee"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/profileNameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="190dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="370dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="210dp"
+            android:background="@color/black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:gravity="center"
+            android:text="@string/personal_information"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/editProfileNameTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="280dp"
+            android:labelFor="@id/editProfileNameDisplay"
+            android:text="@string/full_name_edit"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editProfileNameDisplay"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="200sp"
+            android:layout_marginTop="280dp"
+            android:background="@drawable/edit_text_border2"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/editDobProfileTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="320dp"
+            android:labelFor="@id/editProfileDobDisplay"
+            android:text="@string/date_of_birth"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editProfileDobDisplay"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="200sp"
+            android:layout_marginTop="320dp"
+            android:background="@drawable/edit_text_border2"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/editProfileEmailTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="360dp"
+            android:labelFor="@id/editProfileEmailDisplay"
+            android:text="@string/emailReset"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editProfileEmailDisplay"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="200sp"
+            android:layout_marginTop="360dp"
+            android:background="@drawable/edit_text_border2"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/editProfileAddressTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="400dp"
+            android:labelFor="@id/editProfileAddressDisplay"
+            android:text="@string/address_edit"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editProfileAddressDisplay"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="200sp"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/edit_text_border2"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/editProfilePhoneTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="440dp"
+            android:labelFor="@id/editProfilePhoneDisplay"
+            android:text="@string/phone_no"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editProfilePhoneDisplay"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="200sp"
+            android:layout_marginTop="440dp"
+            android:background="@drawable/edit_text_border2"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/editProfileJobTittleTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="480dp"
+            android:labelFor="@id/editProfileJobTittleDisplay"
+            android:text="@string/job_tittle_edit"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editProfileJobTittleDisplay"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="200sp"
+            android:layout_marginTop="480dp"
+            android:background="@drawable/edit_text_border2"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/editProfileHiredDateTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="520dp"
+            android:labelFor="@id/editProfileHiredDateDisplay"
+            android:text="@string/hired_date"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editProfileHiredDateDisplay"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="200sp"
+            android:layout_marginTop="520dp"
+            android:background="@drawable/edit_text_border2"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/editProfileBaseSalaryTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="560dp"
+            android:labelFor="@id/editProfileBaseSalaryDisplay"
+            android:text="@string/base_salary"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editProfileBaseSalaryDisplay"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="200sp"
+            android:layout_marginTop="560dp"
+            android:background="@drawable/edit_text_border2"
+            android:cursorVisible="false"
+            android:enabled="false"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/editProfileBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="360dp"
+            android:layout_marginTop="235dp"
+            android:contentDescription="@string/EditProfileBtn"
+            app:srcCompat="@drawable/ic_edit_info"
+            tools:ignore="RedundantDescriptionCheck" />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/updateEmployeeBtn"
+        android:layout_width="157dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="600dp"
+        android:text="@string/UpdateEmployee" />
+
+    <Button
+        android:id="@+id/deleteEmployeeBtn"
+        android:layout_width="157dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="217dp"
+        android:layout_marginTop="600dp"
+        android:text="@string/delete_employee" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

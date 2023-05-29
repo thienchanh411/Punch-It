@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+This is the file used for the header in the side drawer that contains the profile picture and full
+name of the user currently signed in
+
+Created by: Tristan Vizvary
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#616161"
+    android:padding="20dp">
+
+    <!--TextView for the fullname, -->
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="@font/petrona"
+        android:text="@string/full_name"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--Using cardviews to create the circle border for the profile picture-->
+</RelativeLayout>
